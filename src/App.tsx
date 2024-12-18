@@ -151,7 +151,7 @@ const App: React.FC = () => {
                   Text to Speech Converter
                 </h3>
                 <p className="mb-4 text-neutral-600">
-                Your Text-to-Speech (TTS) application converts written text into natural-sounding speech,
+                The Text-to-Speech application converts written text into natural-sounding speech,
                 making content more accessible and engaging
                 This app allows users to input text and listen to it in multiple voices and languages.
                 This application is designed to help users with accessibility and language learning, in an interactive and easy-to-use format.
