@@ -113,7 +113,7 @@ const App: React.FC = () => {
                   InnoByte Services
                 </h3>
                 <p className="text-sm text-neutral-600 mb-4">
-                  Web Developer Intern | Current Role since December 2024
+                  Web Developer Intern | Current Role  December 2024 - January 2025
                 </p>
               </motion.div>
             </div>
