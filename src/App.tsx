@@ -107,10 +107,20 @@ const App: React.FC = () => {
           </Section>
 
           <Section title="Experience">
+             <div className="space-y-8">
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-600">
+                  TrustTags  | Ahmedabad - Onsite
+                </h3>
+                <p className="text-sm text-neutral-600 mb-4">
+                  Full Stack Developer | June 2025 - Present
+                </p>
+              </motion.div>
+            </div>
             <div className="space-y-8">
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-600">
-                  InnoByte Services
+                  InnoByte Services | New Delhi - Remote 
                 </h3>
                 <p className="text-sm text-neutral-600 mb-4">
                   Web Developer Intern | December 2024 - January 2025
@@ -121,6 +131,19 @@ const App: React.FC = () => {
 
           <Section title="Projects">
             <div className="space-y-8">
+               <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-600">
+                  Eleweight{" "}
+                </h3>
+                <p className="mb-4 text-neutral-600">
+                Designed and built a full-stack fitness platform serving 100+ users in the testing phase,
+                enabling personalized fitness goals with secure JWT-based authentication and profile management
+                for 100% data privacy. Developed with React.js (frontend), Node.js & Express.js (backend), and MongoDB
+                to manage 1K+ user records securely. Created 50+ personalized workout splits (Chest, Arms, Legs, Core, Cardio)
+                and an exercise library with detailed form guidance. Integrated a location-based gym finder and AI-powered food image 
+                analysis to estimate macros (protein, fats, carbs) and discover 20+ nearby gyms.
+                </p>
+              </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-600">
                   Medium{" "}
@@ -163,8 +186,9 @@ const App: React.FC = () => {
           <Section title="Skills">
             <div className="flex flex-wrap -m-2">
               <SkillBadge skill="React" />
-              <SkillBadge skill="Node.js" />
-              <SkillBadge skill="Express.js" />
+              <SkillBadge skill="Angular" />
+              <SkillBadge skill="Node" />
+              <SkillBadge skill="Express" />
               <SkillBadge skill="MongoDB" />
               <SkillBadge skill="PostgreSQL" />
               <SkillBadge skill="Prisma" />
