@@ -83,12 +83,14 @@ function App() {
       description:
         "Full-featured expense tracker application built with the MERN stack, allows users to efficiently manage their finances. The app enables users to add, categorize, update, and delete expenses, providing a clear overview of spending habits.",
       technologies: ["MongoDB", "Express.js", "React", "Node.js"],
+
     },
     {
       title: "Text to Speech Converter",
       description:
         "The Text-to-Speech application converts written text into natural-sounding speech, making content more accessible and engaging. This app allows users to input text and listen to it in multiple voices and languages.",
       technologies: ["React", "Web Speech API", "JavaScript"],
+      liveLink: "https://text2speech-omega.vercel.app/",
     },
   ];
 
@@ -96,7 +98,7 @@ function App() {
     {
       company: "TrustTags",
       role: "Full Stack Developer",
-      period: "June 2024 - Present",
+      period: "June 2025 - Present",
       location: "Ahmedabad - Onsite",
     },
     {
@@ -518,7 +520,25 @@ function App() {
                   <div className="p-3 bg-slate-800 rounded-xl border border-slate-700 group-hover:border-emerald-500/50 transition-colors">
                     <Code2 className="text-emerald-400" />
                   </div>
-                  {/* Add external link icon if you have project links */}
+                  {project.liveLink && (
+  <motion.a
+    href={project.liveLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.95 }}
+    className="
+      flex items-center gap-2 px-4 py-2 rounded-lg
+      bg-emerald-600 text-white
+      hover:bg-emerald-700
+      shadow-lg shadow-emerald-500/30
+      transition-all font-semibold text-sm
+    "
+    title="Live Demo"
+  >
+  Live Demo
+  </motion.a>
+)}
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
@@ -652,7 +672,7 @@ function App() {
             <div>
               <h4 className="text-lg font-semibold text-white mb-6">Get in Touch</h4>
               <p className="text-slate-400 mb-6">
-                Currently open for new opportunities. Let's discuss your next project!
+                Currently open for new opportunities.
               </p>
               <motion.a
                 whileHover={{ scale: 1.02 }}
